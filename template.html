@@ -1,6 +1,6 @@
 <!-- 
 	Alexandra Defrangesco
-	11/26/2020
+	12/30/2020
 	File: template.html
 	This file is intended to be re-used for building additional pages. Contained within is a basic layout with the company name and logo in the header,  section for content, and the footer with disclaimer information.
 -->
@@ -9,21 +9,26 @@
 <html>
 
 <head>
-	<title>Home - Generic Logo Company</title>
+	<title>  </title>
 	
-	<!-- Little bit of styling to get the footer located at the bottom of the page -->
-	<style>
-		html { position: relative; }
-		html, body { margin: 0; padding: 10px; min-height: 100%; }
-		footer { position: absolute; bottom: 10px; }
-	</style>
+	<!-- Google Fonts stylesheets and links -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bitter:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- Header section containing navigation links (just home for now) and the company name/logo. Captured as a section for re-use later. -->
 	<section>
-		<nav>
+		<nav id="navbar">
 			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT US</a>
+			<a href="services.html">SERVICES</a>
+			<a href="gallery.html">GALLERY</a>
+			<a href="contact.html">CONTACT US</a>
 		</nav>		
 		
 		<header>
