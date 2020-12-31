@@ -25,10 +25,25 @@ h2 {
 }
 
 a {
-	color: red;
 	margin: 0;
 	padding: 5px;
 	position: relative;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: green;
+}
+
+a:active {
+	color: orange;
 }
 
 .content {
