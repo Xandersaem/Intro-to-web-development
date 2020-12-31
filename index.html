@@ -1,8 +1,8 @@
 <!-- 
 	Alexandra Defrangesco
-	11/26/2020
+	12/30/2020
 	File: index.htm
-	This page serves as the landing page for Generic Logo Company. Contained within is some additional information added into the content section of the body, while the rest of the page was generated from the template.html file.
+	This page serves as the landing page for Generic Logo Company. Contained within is some additional information added into the content section of the body, while the rest of the page was generated from the template.html file. Modified and includes additional information.
 -->
 
 <!DOCTYPE html>
@@ -10,21 +10,25 @@
 
 <head>
 	<title>Home - Generic Logo Company</title>
+
+	<!-- Google Fonts stylesheets and links -->	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bitter:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 	
-	<!-- Little bit of styling to get the footer located at the bottom of the page -->
-	<style>
-		html { position: relative; }
-		html, body { margin: 0; padding: 10px; min-height: 100%; }
-		footer { position: absolute; bottom: 10px; }
-	</style>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- Header section containing navigation links (just home for now) and the company name/logo. Captured as a section for re-use later. -->
 	<section>
-		<nav>
-			<a href="index.html">HOME</a>
-		</nav>		
+		<nav id="navbar">
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT US</a>
+				<a href="services.html">SERVICES</a>
+				<a href="contact.html">CONTACT US</a>
+		</nav>
 		
 		<header>
 			<h1>Generic Logo Company</h1>
@@ -35,8 +39,11 @@
 	<!-- Section containing the information about the company. Replace this with other information for other page layouts containing other content types. -->
 	<section class="content">
 		<article>
-			<h1>About Us</h1>
-			<p>Founded during the Great Plague of 2020, Generic Logo Company is a proud creative source for turning your dream into a marketable reality. With flashy, minimal designs which invoke attention from all eyes, your product will gain instant brand recognition.</p>
+			<h2>Mission Statement</h2>
+			<section class="typed">
+				<p>Generic Logo Company strives to enhance your company's brand recognition and increase your sales pipeline. Compete fairly with mega-corporations who have massive marketing budgets without matching their expense.</p>
+				<p>Maria, our very first client, had this to say: <q>Our product was a hit with investors, but when it came time to go to market, sales stalled. Nobody heard of us so naturally we were being overlooked by bigger competitors. With GenCom's knowledgable and friendly staff, our product was exploding on every social media site! Sales grew tenfold within weeks thanks to a new, exciting logo and effective advertising to the audiences most interested in products like ours. If you face the same challenges I did, GenCom will not disappoint.</q></p>
+			</section>
 		</article>
 	</section>
 	
@@ -49,6 +56,5 @@
 	</section>
 
 </body>
-
 
 </html>
