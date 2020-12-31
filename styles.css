@@ -48,5 +48,6 @@ q {
 
 footer { 
 	position: absolute; 
-	bottom: 10px; 
+	bottom: 10px;
+	font-size: 16px;
 }
