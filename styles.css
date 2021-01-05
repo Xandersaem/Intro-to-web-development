@@ -97,7 +97,7 @@ a:active {
 /* Class for making columns in Services.html page */
 .columned {
 	column-count: 2;
-	column-width: 50%;
+	column-width: auto;
 }
 
 q {
