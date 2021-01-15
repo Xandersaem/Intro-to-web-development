@@ -1,14 +1,6 @@
-html { 
-	margin: 0; 
-	padding: 10px;
+html, body { 
 	position: relative;
-	min-height: 95%;
 	background-color: #D3D3D3;
-}
-
-body {
-	margin: 10px;
-	padding: 0px;
 }
 
 h1 {
@@ -48,8 +40,9 @@ a:active {
 
 /* Content class to size/format changing content on each page */
 .content {
-	margin-left: 30px;
-	margin-top: 2%;
+	position: relative;
+/*	margin-left: 30px;  Deprecated to avoid overlapping issue with footer */
+	clear: both;
 }
 
 .typed {
@@ -57,6 +50,7 @@ a:active {
 	margin-left: 30px;
 	font-family: 'Times New Roman';
 	font-size: 20px;
+	clear:both;
 }
 
 /* Section for formatting the index.html testimony table */
@@ -94,7 +88,7 @@ a:active {
 	border: 0 none;
 }
 
-/* Class for making columns in Services.html page */
+/* Section for Services.html page formatting */
 .columned {
 	column-count: 2;
 	column-width: auto;
@@ -104,8 +98,42 @@ q {
 	font-style: italic;
 }
 
-footer { 
-	position: absolute; 
-	bottom: 10px;
+.videoContent {
+	margin-left: 30px;
+	position: relative;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-left: 30px;
 	font-size: 16px;
 }
+
+
+/* Section for tweaking the gallery positioning on the gallery.html page */
+
+.mediaContent {
+	margin-left: 20px;
+}
+
+div.gallery {
+	margin: 10px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 240px;
+}
+
+div.gallery img{
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+
