@@ -55,6 +55,46 @@
 						<td>InASecondGram: @gencomlogos</td>
 					</tr>
 				</table>
+									
+				<p>Or, drop your information into the boxes below and we will connect with you personally!</p>
+				
+				<!-- Start of contact info form to capture relevant data for marketing/customer contact -->
+				<form action="response_page.php" method="post"> <!-- Don't forget the link here... -->
+					<fieldset>
+						<legend>Who you are:</legend>
+						<label for="firstname">First name:</label><br>
+						<input type="text" id="firstname" name="firstname" value="Best"><br>
+						<label for="lastname">Last name:</label><br>
+						<input type="text" id="lastname" name="lastname" value="Person"><br>
+						<label for="email">Email:</label><br>
+						<input type="text" id="email" name="email"><br>
+						
+						<!-- Drop-down box for recording lead source -->
+						<label for="marketing">How did you hear about us?</label><br>
+						<select name="marketing" id="marketing">
+							<option value="web">Website search</option>
+							<option value="talk">Word of mouth</option>
+							<option value="adsYT">YouTube ad</option>
+							<option value="other">Other</option>
+							<option value="none">I have not until now...</option>
+						</select><br>
+						
+						<!-- Find out if they've been here before -->
+						<label for="repeatCustomer">Have you contracted us before?</label><br>						
+						<input type="radio" id="Yes" name="repeatCustomer" value="Yes">
+						<label for="Yes">Yes</label><br>
+						<input type="radio" id="No" name="repeatCustomer" value="No">
+						<label for="No">No</label><br>
+						
+						<!-- Optional text area for customer to add additional info. -->
+						<label for="details">Leave some details below so a representative can personalize your response</label><br>
+						<textarea id="details" name="details" rows="3" cols="50">
+							(Optional) Enter your details here...
+						</textarea><br>
+						
+						<input type="submit" value="Submit">
+					</fieldset>
+				</form> <!-- End form addition -->
 				</section>
 		</article>
 	</section>
