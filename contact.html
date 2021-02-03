@@ -1,6 +1,6 @@
 <!-- 
 	Alexandra Defrangesco
-	1/29/2021
+	2/02/2021
 	File: contact.html
 	This file contains content for the contact us section of the assignment webpage
 -->
@@ -55,23 +55,24 @@
 						<td>InASecondGram: @gencomlogos</td>
 					</tr>
 				</table>
-									
+				
 				<p>Or, drop your information into the boxes below and we will connect with you personally!</p>
 				
-				<!-- Start of contact info form to capture relevant data for marketing/customer contact -->
-				<form action="response_page.php" method="post"> <!-- Don't forget the link here... -->
+				<!-- Start of contact info form to capture relevant data for marketing/customer contact
+				NOTE: Removed "response_page.php" from form action, as Github does not support PHP execution. Will get error 405. -->
+				<form action="inputreceived.html" method="post"> <!-- Don't forget the link here... -->
 					<fieldset>
 						<legend>Who you are:</legend>
 						<label for="firstname">First name:</label><br>
-						<input type="text" id="firstname" name="firstname" value="Best"><br>
+						<input type="text" id="firstname" name="firstname" value="Best" required><br>
 						<label for="lastname">Last name:</label><br>
 						<input type="text" id="lastname" name="lastname" value="Person"><br>
 						<label for="email">Email:</label><br>
-						<input type="text" id="email" name="email"><br>
+						<input type="email" id="email" name="email" required><br>
 						
 						<!-- Drop-down box for recording lead source -->
 						<label for="marketing">How did you hear about us?</label><br>
-						<select name="marketing" id="marketing">
+						<select name="marketing" id="marketing" required>
 							<option value="web">Website search</option>
 							<option value="talk">Word of mouth</option>
 							<option value="adsYT">YouTube ad</option>
